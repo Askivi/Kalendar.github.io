@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kalendar</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+<div class="container">
+	<header>
+		<h1 class="title">Календар Январь 2025</h1>
+		<p class="subtitle">Идидиди</p>
+	</header>
+
+	<div class="calendar">
+		
+		<div class="days-of-week">
+			<div class="day">Пн</div>
+			<div class="day">Вт</div>
+			<div class="day">Ср</div>
+			<div class="day">Чт</div>
+			<div class="day">Пт</div>
+			<div class="day">Сб</div>
+			<div class="day">Вс</div>
+		</div>
+
+		<div class="days"> 
+			<div class="day-number"></div>
+			<div class="day-number"></div>
+			<div class="day-number" onclick="showTooltip(this)">1</div>
+			<div class="tooltip">Не проснись под елкой</div>			
+			<div class="day-number" onclick="showTooltip(this)">2</div>
+			<div class="tooltip">Займись егай</div>
+			<div class="day-number" onclick="showTooltip(this)">3</div>
+			<div class="tooltip">Сфоткайся с рандомным челом на улице</div>
+			<div class="day-number" onclick="showTooltip(this)">4</div>
+			<div class="tooltip">Погуляй с друзьями большой компанией</div>
+			<div class="day-number" onclick="showTooltip(this)">5</div>
+			<div class="tooltip">Устрой домашнюю фотосессию</div>
+
+			<div class="day-number" onclick="showTooltip(this)">6</div>
+			<div class="tooltip">Узнай при скольких градусах замерзает дестилированная вода</div>
+			<div class="day-number" onclick="showTooltip(this)">7</div>
+			<div class="tooltip">Разбери комфликт из инета и выбери сторону</div>
+			<div class="day-number" onclick="showTooltip(this)">8</div>
+			<div class="tooltip">Сплети фенечку</div>
+			<div class="day-number" onclick="showTooltip(this)">9</div>
+			<div class="tooltip">Приготовь оладушки</div>
+			<div class="day-number" onclick="showTooltip(this)">10</div>
+			<div class="tooltip">Прочитай книгу</div>
+			<div class="day-number" onclick="showTooltip(this)">11</div>
+			<div class="tooltip">Сделай зарядку</div>
+			<div class="day-number" onclick="showTooltip(this)">12</div>
+			<div class="tooltip">Прбежись вокруг дома 3 круга</div>
+
+			<div class="day-number" onclick="showTooltip(this)">13</div>
+			<div class="tooltip">Прибери своё рабочее место</div>
+			<div class="day-number" onclick="showTooltip(this)">14</div>
+			<div class="tooltip">Молодец, купи себе шоколадку</div>
+			<div class="day-number" onclick="showTooltip(this)">15</div>
+			<div class="tooltip">Пройдись по городу в наушниках с любимй музыкой</div>
+			<div class="day-number" onclick="showTooltip(this)">16</div>
+			<div class="tooltip">Посмотри лэстплей на любую игру</div>
+			<div class="day-number" onclick="showTooltip(this)">17</div>
+			<div class="tooltip">Скинь смешного котика другу</div>
+			<div class="day-number" onclick="showTooltip(this)">18</div>
+			<div class="tooltip">Обернись</div>
+			<div class="day-number" onclick="showTooltip(this)">19</div>
+			<div class="tooltip">Посмотри ужастик с выключенным светом</div>
+
+			<div class="day-number" onclick="showTooltip(this)">20</div>
+			<div class="tooltip">Схиди в магазин и купижевачки на 100 рублей</div>
+			<div class="day-number" onclick="showTooltip(this)">21</div>
+			<div class="tooltip">Покатайся на коньках</div>
+			<div class="day-number" onclick="showTooltip(this)">22</div>
+			<div class="tooltip">Сезди в лес</div>
+			<div class="day-number" onclick="showTooltip(this)">23</div>
+			<div class="tooltip">Поищи маньяков на улице</div>
+			<div class="day-number" onclick="showTooltip(this)">24</div>
+			<div class="tooltip">Почитай правила русского языка</div>
+			<div class="day-number" onclick="showTooltip(this)">25</div>
+			<div class="tooltip">Поешь без водео на фоне</div>
+			<div class="day-number" onclick="showTooltip(this)">26</div>
+			<div class="tooltip">Сходи в тц</div>
+
+			<div class="day-number" onclick="showTooltip(this)">27</div>
+			<div class="tooltip">Нарисуй людей в автобусе</div>
+			<div class="day-number" onclick="showTooltip(this)">28</div>
+			<div class="tooltip">Купи и попробуй чипсы с новым вкусом</div>
+			<div class="day-number" onclick="showTooltip(this)">29</div>
+			<div class="tooltip">ЫЫФЗХЛОРИТ</div>
+			<div class="day-number" onclick="showTooltip(this)">30</div>
+			<div class="tooltip">Убури елку</div>
+			<div class="day-number" onclick="showTooltip(this)">31</div>
+			<div class="tooltip">Посмотри сериальчик</div>
+			<div class="day-number"></div>
+			<div class="day-number"></div>
+		</div>
+
+	</div>
+</div>
+
+<script>
+	function showTooltip(dayElement){
+		const tooltip = dayElement.nextElementSibling; 
+		tooltip.style.display=tooltip.style.display==='block'?'none':'block';
+	}
+</script>
+
+</body>
+</html>

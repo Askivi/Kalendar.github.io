@@ -1,0 +1,88 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #700008;
+	color: black;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.container{
+	background: white;
+	padding: 20px;
+	border-radius: 15px;
+	white: 600px;
+}
+header{
+	margin-bottom: 30px;
+}
+.title{
+	color: #B00000;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.subtitle{
+	font-size: 15px;
+	color: #700008;
+}
+.calendar{
+	background-color: #ffffff;
+	padding: 15px;
+	border-radius: 15px;
+	box-shadow: 0 0 15px rgba(1, 0, 0, 0.5);
+}
+.days-of-week{
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 10px;
+	margin-bottom: 10px;
+}
+.day{
+	font-weight: bold;
+	font-size: 1.1rem;
+	color: #700008;
+}
+.days{
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 10px;
+}
+.day-number{
+	font-size: 1.2rem;
+	padding: 20px;
+	background-color: #F08080;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.day-number:hover{
+	background-color: #98FB98;
+	transform: scale(1.2);
+}
+.day-number:active{
+	background-color: #FF6347;
+	color: #fffff;
+}
+.day-number:nth-child(3){
+	background-color: #FF6347;
+	color: #fff;
+	font-weight: bold;
+}
+.tooltip{
+	display: none;
+	position: absolute;
+	background-color: #700008;
+	color: #E0FFFF;
+	border-radius: 7px;
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	transform: translateY(-150%);
+	z-index: 10;
+}
+.day-number:hover +.tooltip{
+	display: block;
+}
+
+
